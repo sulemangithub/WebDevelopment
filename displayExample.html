@@ -1,0 +1,105 @@
+<html>
+    <head>
+        <title>position</title>
+
+        <style>
+            .h1{
+                display: inline;
+            }   
+            
+            .h2
+            {
+                display: block;
+            }
+
+            li{
+                position: relative;
+                display: inline-block;
+                top: 2px;
+                left: 5px;
+                padding: 2px;
+                border: 1px red solid;
+                background: rgb(157, 236, 157);
+                height: 30px;
+                width: 100px;
+                border-radius: 10px;
+            }
+
+            li a{
+                position: relative;
+                display: inline;
+                top: 2px;
+                left: 20px;
+                right: 0;
+                bottom: 0;    
+                padding: 2px;   
+                font: 25px bold; 
+                cursor: pointer;                       
+            }
+
+            li:hover
+            {
+                background: rgb(241, 202, 27);                
+            }
+
+            .container
+            {
+                display: none;
+                position: absolute;
+                top: 200px;
+                left: 20px;
+                right: 20px;
+                padding: 20px;
+                width: 400px;
+                margin: auto;
+                border: 2px solid blueviolet;
+            }
+        </style>
+
+        <script>
+            function hideAll()
+            {
+                document.getElementById('d1').style.display='none';
+                document.getElementById('d2').style.display='none';
+                document.getElementById('d3').style.display='none';
+                document.getElementById('d4').style.display='none';
+                document.getElementById('d5').style.display='none';
+            }
+        </script>
+
+    </head>
+
+    <body>
+        <h1 class="h2">This is heading one.</h1>
+        <h1 class="h1">This is heading two.</h1>
+
+        <ul>
+            <li><a onclick="hideAll(); document.getElementById('d1').style.display='block'">one</a></li>
+            <li><a onclick="hideAll();document.getElementById('d2').style.display='block'">two</a></li>
+            <li><a onclick="hideAll();document.getElementById('d3').style.display='block'">three</a></li>
+            <li><a onclick="hideAll();document.getElementById('d4').style.display='block'">four</a></li>
+            <li><a onclick="hideAll();document.getElementById('d5').style.display='block'">five</a></li>
+        </ul>
+
+        <div class="container" id="d1">
+            First division;
+        </div>
+
+        <div class="container" id="d2">
+                second division;
+        </div>
+
+        <div class="container" id="d3">
+                Third division;
+        </div>
+
+        <div class="container" id="d4">
+                Fourth division;
+        </div>
+
+        <div class="container" id="d5">
+                Fifth division;
+        </div>
+
+    </body>
+</html>

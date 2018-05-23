@@ -1,0 +1,36 @@
+            #d1
+            {
+                background-color: red;
+            }
+
+            .class1
+            {
+                background-color: beige;
+                margin: auto;
+                width: 50%;
+                height: 300px;                
+                border: 2px springgreen solid;
+            }
+
+            .input:focus
+            {
+                background-color: rgb(246, 245, 196)
+            }            
+
+            .input:hover{
+                border: 2px solid gold;                
+            }
+
+            .input
+            {
+                border-radius: 5px;
+                height: 40px;                
+                position: relative;
+                width: 100%;
+                z-index: inherit;
+            }
+
+            .class2
+            {
+                display: inline-block;
+            }        

@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <style>
+        
+        .main-content
+        {
+            border: 2px green solid;
+            width: 95vw;
+            margin-left: 20px;
+            margin-right: 20px;
+            font: 18pt tahoma bold;
+        }
+
+        .modal
+        {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            height: 100%;
+            width: 100%;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-color: rgb(243, 116, 116); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+        }
+
+        .modal-content
+        {
+            background-color: bisque;
+            margin: 20px auto;
+            padding: 30px;
+            border: 2px rgb(126, 221, 126) solid;
+            width: 50vw;
+        }        
+
+        .close
+        {
+            position: absolute;
+            display: block ; 
+            top: 35px;
+            right: 320px
+        }
+
+        .close:hover
+        {
+            cursor: pointer;
+        }
+        
+        </style>
+
+<script>
+    function showModal()
+    {
+        setTimeout(function(){
+            document.getElementById('modal').style.display='block';
+        },5000);
+    }
+
+
+</script>
+
+    </head>
+
+    <body onload="showModal();">
+
+        <div id="main-content" class="main-content">
+            <button onclick="document.getElementById('modal').style.display='block'">modal</button>
+                Tips and Tricks" lets you jump right in and learn how to be productive with Visual Studio Code. You'll become familiar with its powerful editing, code intelligence, and source code control features and learn useful keyboard shortcuts. This topic goes pretty fast and provides a broad overview, so be sure to look at the other in-depth topics in Getting Started and the User Guide to learn more.
+
+                If you don't have Visual Studio Code installed, go to the Download page. You can find platform specific setup instructions at Running VS Code on Linux, macOS, and Windows.
+                
+                Basics
+                Getting Started
+                Open the Welcome page to get started with the basics of VS Code. Help > Welcome.
+                
+                welcome page
+                
+                In the bottom right of the Welcome page, there is a link to the Interactive playground where you can interactively try out VS Code's feature. Help > Interactive Playground.
+                
+                interactive playground
+                
+                Command Palette
+                Access all available commands based on your current context.
+                
+                Keyboard Shortcut: Ctrl+Shift+P
+                
+                command palette
+                
+                Default keyboard shortcuts
+                All of the commands are in the Command Palette with the associated key binding (if it exists). If you forget a keyboard shortcut, use the Command Palette to help you out.
+                
+                keyboard references
+                
+                Keyboard Reference Sheets
+                Download the keyboard shortcut reference sheet for your platform (macOS, Windows, Linux).
+                
+                Keyboard Reference Sheet
+                
+                Quick Open
+                Quickly open files.
+                
+                Keyboard Shortcut: Ctrl+P
+
+                Tips and Tricks" lets you jump right in and learn how to be productive with Visual Studio Code. You'll become familiar with its powerful editing, code intelligence, and source code control features and learn useful keyboard shortcuts. This topic goes pretty fast and provides a broad overview, so be sure to look at the other in-depth topics in Getting Started and the User Guide to learn more. If you don't have Visual Studio Code installed, go to the Download page. You can find platform specific setup instructions at Running VS Code on Linux, macOS, and Windows. Basics Getting Started Open the Welcome page to get started with the basics of VS Code. Help > Welcome. welcome page In the bottom right of the Welcome page, there is a link to the Interactive playground where you can interactively try out VS Code's feature. Help > Interactive Playground. interactive playground Command Palette Access all available commands based on your current context. Keyboard Shortcut: Ctrl+Shift+P command palette Default keyboard shortcuts All of the commands are in the Command Palette with the associated key binding (if it exists). If you forget a keyboard shortcut, use the Command Palette to help you out. keyboard references Keyboard Reference Sheets Download the keyboard shortcut reference sheet for your platform (macOS, Windows, Linux). Keyboard Reference Sheet Quick Open Quickly open files. Keyboard Shortcut: Ctrl+P
+
+                Tips and Tricks" lets you jump right in and learn how to be productive with Visual Studio Code. You'll become familiar with its powerful editing, code intelligence, and source code control features and learn useful keyboard shortcuts. This topic goes pretty fast and provides a broad overview, so be sure to look at the other in-depth topics in Getting Started and the User Guide to learn more. If you don't have Visual Studio Code installed, go to the Download page. You can find platform specific setup instructions at Running VS Code on Linux, macOS, and Windows. Basics Getting Started Open the Welcome page to get started with the basics of VS Code. Help > Welcome. welcome page In the bottom right of the Welcome page, there is a link to the Interactive playground where you can interactively try out VS Code's feature. Help > Interactive Playground. interactive playground Command Palette Access all available commands based on your current context. Keyboard Shortcut: Ctrl+Shift+P command palette Default keyboard shortcuts All of the commands are in the Command Palette with the associated key binding (if it exists). If you forget a keyboard shortcut, use the Command Palette to help you out. keyboard references Keyboard Reference Sheets Download the keyboard shortcut reference sheet for your platform (macOS, Windows, Linux). Keyboard Reference Sheet Quick Open Quickly open files. Keyboard Shortcut: Ctrl+P    
+                Tips and Tricks" lets you jump right in and learn how to be productive with Visual Studio Code. You'll become familiar with its powerful editing, code intelligence, and source code control features and learn useful keyboard shortcuts. This topic goes pretty fast and provides a broad overview, so be sure to look at the other in-depth topics in Getting Started and the User Guide to learn more. If you don't have Visual Studio Code installed, go to the Download page. You can find platform specific setup instructions at Running VS Code on Linux, macOS, and Windows. Basics Getting Started Open the Welcome page to get started with the basics of VS Code. Help > Welcome. welcome page In the bottom right of the Welcome page, there is a link to the Interactive playground where you can interactively try out VS Code's feature. Help > Interactive Playground. interactive playground Command Palette Access all available commands based on your current context. Keyboard Shortcut: Ctrl+Shift+P command palette Default keyboard shortcuts All of the commands are in the Command Palette with the associated key binding (if it exists). If you forget a keyboard shortcut, use the Command Palette to help you out. keyboard references Keyboard Reference Sheets Download the keyboard shortcut reference sheet for your platform (macOS, Windows, Linux). Keyboard Reference Sheet Quick Open Quickly open files. Keyboard Shortcut: Ctrl+P
+        </div>
+
+        <div class="modal" id="modal">
+            <div class="modal-content">
+                <div class="header">
+                    <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
+                    <h1>Modal Header</h1>
+                </div>
+                <div class="header">
+                    <img src="logo.jpg" width="200" height="200">
+                </div>
+                <div class="header">
+                    <p>Modal Footer</p>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

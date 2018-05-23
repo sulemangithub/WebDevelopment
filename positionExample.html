@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <title>position</title>
+
+        <style>
+            .container1
+            {
+                position: static;
+                top: 20px;
+                left: 20px;
+                background: red;
+                height: 20%;
+                width: 50%;
+            }
+
+            .container2
+            {
+                position: relative;
+                top: 20px;
+                left: 20px;                
+                background: green;
+                height: 20%;
+                width: 50%;
+            }
+
+            .container3
+            {
+                position: absolute;
+                top: 900px;
+                left: 20px;
+
+                background: blue;
+                height: 300px;
+                width: 50%;
+                height: 20%;
+            }
+
+            .container4
+            {
+                position: sticky;
+                right: 400px;
+                top: 200px;
+                background: blue;
+                height: 300px;
+                width: 50%;
+                height: 20%;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div class="container1">
+            <p>This is static div</p>
+        </div>
+
+        <div class="container2">
+                <p>This is relative div</p>
+        </div>
+        <div class="container3">
+                <p>This is absolute div</p>
+        </div>
+
+        <div class="container4">
+                <p>This is sticky div</p>
+        </div>
+    </body>
+</html>
